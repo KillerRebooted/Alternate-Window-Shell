@@ -32,5 +32,5 @@ if __name__ == '__main__':
     displayIcon(r'C:\Windows\System32\imageres.dll', 11)
 
     for i in range(1000):
-        displayIcon(r'C:\Windows\System32\imageres.dll', i)
+        displayIcon(r'C:\Windows\System32\shell32.dll', i)
         print(i)
