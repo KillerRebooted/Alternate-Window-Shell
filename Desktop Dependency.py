@@ -33,6 +33,8 @@ def get_file_icon(file_extension, large_icon=True):
         
         icon_handle = info.icon_handle
 
+        print(icon_handle)
+
         if icon_handle:
         
             icon_info = win32gui.GetIconInfo(icon_handle)
@@ -42,7 +44,7 @@ def get_file_icon(file_extension, large_icon=True):
     
         print(f"SHGetFileInfoW failed with error code: {ctypes.GetLastError()}")
 
-icon = get_file_icon(r"C:\Users\Shreyas Nair\Desktop\Oct2024.rar", large_icon=True)
+icon = get_file_icon(r"C:\Users\Shreyas Nair\Desktop\May 2024", large_icon=True)
 if icon:
     icon.show()
 else:
