@@ -68,7 +68,7 @@ for file in files:
 
         else:
 
-            img = Image.open(os.path.join(os.path.dirname(__file__), "placeholder.png"))
+            img = Image.open(os.path.join(os.path.dirname(__file__), r"Icons\Icons\files\generic.ico"))
 
 
         button = ctk.CTkButton(win, text=os.path.basename(file), height=50, width=50, image=ctk.CTkImage(dark_image=img, size=(50,50)), command=lambda file=file: os.startfile(file))
@@ -77,7 +77,7 @@ for file in files:
 
         print(e)
 
-        img = Image.open(os.path.join(os.path.dirname(__file__), "placeholder.png"))
+        img = Image.open(os.path.join(os.path.dirname(__file__), r"Icons\Icons\files\generic.ico"))
         
         button = ctk.CTkButton(win, text=os.path.basename(file), height=50, width=50, image=ctk.CTkImage(dark_image=img, size=(50,50)), command=lambda file=file: os.startfile(file))
 

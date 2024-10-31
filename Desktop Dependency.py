@@ -44,8 +44,8 @@ def get_file_icon(file_extension, large_icon=True):
     
         print(f"SHGetFileInfoW failed with error code: {ctypes.GetLastError()}")
 
-icon = get_file_icon(r"C:\Users\Shreyas Nair\Desktop\May 2024", large_icon=True)
+"""icon = get_file_icon(r"", large_icon=True)
 if icon:
     icon.show()
 else:
-    print("Icon not found.")
+    print("Icon not found.")"""
